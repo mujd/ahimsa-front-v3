@@ -1,0 +1,113 @@
+<html>
+      <head>
+        <meta charset="UTF-8">
+        <title>README.md</title>
+      </head>
+      <body>
+        <h1 align="center">bootstrap-select</h1>
+
+<p align="center">
+    <strong>The jQuery plugin that brings select elements into the 21st century with intuitive multiselection, searching, and much more. Now with Bootstrap 4 support.</strong>
+</p>
+
+<p align="center">
+    <a href="https://github.com/snapappointments/bootstrap-select/releases/latest" target="_blank">
+        <img src="https://img.shields.io/github/release/snapappointments/bootstrap-select.svg" alt="Latest release">
+    </a>
+    <a href="https://www.npmjs.com/package/bootstrap-select" target="_blank">
+        <img src="https://img.shields.io/npm/v/bootstrap-select.svg" alt="npm">
+    </a>
+    <a href="https://www.nuget.org/packages/bootstrap-select" target="_blank">
+        <img src="https://img.shields.io/nuget/v/bootstrap-select.svg" alt="NuGet">
+    </a>
+    <a href="https://cdnjs.com/libraries/bootstrap-select" target="_blank">
+        <img src="https://img.shields.io/cdnjs/v/bootstrap-select.svg" alt="CDNJS">
+    </a>
+    <br>
+    <a href="https://cdnjs.com/libraries/bootstrap-select" target="_blank">
+        <img src="https://img.shields.io/badge/license-MIT-brightgreen.svg" alt="License">
+    </a>
+    <a href="https://david-dm.org/snapappointments/bootstrap-select?type=peer" target="_blank">
+        <img src="https://img.shields.io/david/peer/snapappointments/bootstrap-select.svg" alt="peerDependencies Status">
+    </a>
+    <a href="https://david-dm.org/snapappointments/bootstrap-select#info=devDependencies" target="_blank">
+        <img src="https://david-dm.org/snapappointments/bootstrap-select/dev-status.svg" alt="devDependency Status">
+    </a>
+</p>
+
+<p align="center">
+    <a href="https://developer.snapappointments.com/bootstrap-select"><img src="https://user-images.githubusercontent.com/2874325/38997831-97e12bbe-43ab-11e8-85f5-b8c05d91c7b1.gif" width="289" height="396" alt="bootstrap-select demo"></a>
+</p>
+
+<h2 id="demo">Demo</h2>
+<p>You can view a live demo and some examples of how to use the various options <a href="https://developer.snapappointments.com/bootstrap-select/examples/">here</a>.</p>
+<h2 id="quick-start">Quick start</h2>
+<p>Bootstrap-select requires jQuery v1.9.1+, Bootstrap’s dropdown.js component, and Bootstrap&#39;s CSS. If you&#39;re not already using Bootstrap in your project, a precompiled version of the Bootstrap v3.3.7 minimum requirements can be downloaded <a href="https://getbootstrap.com/docs/3.3/customize/?id=7830063837006f6fc84f">here</a>. If using bootstrap-select with Bootstrap v4+, you&#39;ll also need Popper.js. For all of Bootstrap v4&#39;s requirements, see <a href="https://getbootstrap.com/docs/4.1/getting-started/introduction/">Getting started</a>. A precompiled version of the requirements will be made available in an upcoming release of bootstrap-select.</p>
+<p>Several quick start options are available:</p>
+<ul>
+<li><a href="https://github.com/snapappointments/bootstrap-select/archive/v1.13.2.zip">Download the latest release.</a></li>
+<li>Clone the repo: <code>git clone https://github.com/snapappointments/bootstrap-select.git</code></li>
+<li>Install with <a href="https://www.npmjs.com/package/bootstrap-select">npm</a>: <code>npm install bootstrap-select</code></li>
+<li>Install with <a href="https://yarn.pm/bootstrap-select">yarn</a>: <code>yarn add bootstrap-select</code></li>
+<li>Install with <a href="https://getcomposer.org">Composer</a>: <code>composer require snapappointments/bootstrap-select</code></li>
+<li>Install with <a href="https://www.nuget.org/packages/bootstrap-select">NuGet</a>: <code>Install-Package bootstrap-select</code></li>
+<li>Install with <a href="https://bower.io">Bower</a>: <code>bower install bootstrap-select</code></li>
+<li>Install via CDN:</li>
+</ul>
+<pre><code class="lang-html">&lt;!-- Latest compiled and minified CSS --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/css/bootstrap-select.min.css&quot;&gt;
+
+&lt;!-- Latest compiled and minified JavaScript --&gt;
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/js/bootstrap-select.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- (Optional) Latest compiled and minified JavaScript translation files --&gt;
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/js/i18n/defaults-*.min.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<blockquote>
+<p>The CDN is updated after the release is made public, which means that there is a delay between the publishing of a release and its availability on the CDN.</p>
+</blockquote>
+<h2 id="usage">Usage</h2>
+<blockquote>
+<p>Bootstrap 4 only works with bootstrap-select v1.13.0+. By default, bootstrap-select automatically detects the version of Bootstrap being used. However, there are some instances where the version detection won&#39;t work. See the <a href="https://developer.snapappointments.com/bootstrap-select/options/#bootstrap-version">documentation</a> for more information.</p>
+</blockquote>
+<h3 id="via-selectpicker-class">Via <code>selectpicker</code> class</h3>
+<p>Add the <code>selectpicker</code> class to your select element to use the data-api.</p>
+<pre><code class="lang-html">&lt;select class=&quot;selectpicker&quot;&gt;
+  &lt;option&gt;Mustard&lt;/option&gt;
+  &lt;option&gt;Ketchup&lt;/option&gt;
+  &lt;option&gt;Barbecue&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
+<h3 id="via-javascript">Via JavaScript</h3>
+<pre><code class="lang-js">// To style only selects with the selectpicker class
+$(&#39;.selectpicker&#39;).selectpicker();
+</code></pre>
+<p>or</p>
+<pre><code class="lang-js">// To style all selects
+$(&#39;select&#39;).selectpicker();
+</code></pre>
+<p>If calling bootstrap-select via JavaScript, you will need to wrap your code in a <a href="https://api.jquery.com/ready/"><code>$(document).ready()</code></a> block or place it at the bottom of the page (after the last instance of bootstrap-select).</p>
+<p>Check out the <a href="https://developer.snapappointments.com/bootstrap-select">documentation</a> for further information.</p>
+<h2 id="bugs-and-feature-requests">Bugs and feature requests</h2>
+<p>Anyone and everyone is welcome to contribute. <strong>Please take a moment to
+review the <a href="CONTRIBUTING.md">guidelines for contributing</a></strong>. Make sure you&#39;re using the latest version of bootstrap-select before submitting an issue.</p>
+<ul>
+<li><a href="CONTRIBUTING.md#bug-reports">Bug reports</a></li>
+<li><a href="CONTRIBUTING.md#feature-requests">Feature requests</a></li>
+</ul>
+<h2 id="documentation">Documentation</h2>
+<p>Bootstrap-select&#39;s documentation, included in this repo in the root directory, is built with MkDocs and hosted at <a href="https://developer.snapappointments.com/bootstrap-select">https://developer.snapappointments.com/bootstrap-select</a>. The documentation may also be run locally.</p>
+<h3 id="running-documentation-locally">Running documentation locally</h3>
+<ol>
+<li>If necessary, <a href="https://www.mkdocs.org/#installation">install MkDocs</a>.</li>
+<li>Install <a href="https://mkdocs.github.io/mkdocs-bootstrap/">mkdocs-bootstrap</a> using <code>pip install mkdocs-bootstrap</code>.</li>
+<li>From the <code>/bootstrap-select/docs</code> directory, run <code>mkdocs serve</code> in the command line.</li>
+<li>Open <code>http://127.0.0.1:8000/</code> in your browser, and voilà.</li>
+</ol>
+<p>Learn more about using MkDocs by reading its <a href="https://www.mkdocs.org/">documentation</a>.</p>
+<h2 id="copyright-and-license">Copyright and license</h2>
+<p>Copyright (C) 2012-2018 <a href="https://snapappointments.com">SnapAppointments, LLC</a></p>
+<p>Licensed under <a href="LICENSE">the MIT license</a>.</p>
+
+      </body>
+    </html>

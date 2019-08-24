@@ -1,0 +1,61 @@
+/*------------------
+  Filter search
+---------------------*/
+
+.filter-search {
+    position: relative;
+    z-index: 2;
+}
+
+.filter-search .container .card {
+    /* position: absolute;
+    top: -46px;
+    width: 50%; */
+    /* left: 50%; */
+}
+
+.filter-search .container .card .view.view-cascade {
+    position: absolute;
+    border-radius: 0;
+    width: 370px;
+    height: 80px;
+    top: -26px;
+    left: 0px;
+}
+
+.filter-search .container .filter-form {
+    /* padding: 31px;
+    background: #30caa0;
+    border-radius: 3px; */
+}
+
+.filter-search .container .card .view {
+    /* color: red; */
+}
+
+@media (min-width: 991px) {
+    .filter-search {
+        margin-top: -100px;
+    }
+}
+
+@media (max-width: 990px) {
+    .filter-search {
+        margin-top: -100px;
+    }
+}
+
+@media (max-width: 740px) {
+    .filter-search {
+        margin-top: 5px;
+    }
+    .filter-search .container .card .view.view-cascade {
+        width: 90%;
+    }
+}
+
+@media (max-width: 382px) {
+    .filter-search .container .card .view.view-cascade h5 {
+        font-size: 18px;
+    }
+}

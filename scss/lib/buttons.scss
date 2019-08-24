@@ -1,0 +1,139 @@
+/* BUTTONS */
+
+.btn .fa {
+    margin-left: 3px;
+}
+
+.btn-white {
+    color: black !important;
+}
+
+.btn .fa-lg,
+.btn-floating .fa-lg {
+    font-size: 1.33333em !important;
+}
+
+.btn .fa-xs,
+.btn-floating .fa-xs {
+    font-size: 0.75em !important;
+}
+
+.btn .fa-sm,
+.btn-floating .fa-sm {
+    font-size: 0.875em !important;
+}
+
+.btn .fa-1x,
+.btn-floating .fa-1x {
+    font-size: 1em !important;
+}
+
+.btn .fa-2x,
+.btn-floating .fa-2x {
+    font-size: 2em !important;
+}
+
+.btn .fa-3x,
+.btn-floating .fa-3x {
+    font-size: 3em !important;
+}
+
+.btn .fa-4x,
+.btn-floating .fa-4x {
+    font-size: 4em !important;
+}
+
+.btn .fa-5x,
+.btn-floating .fa-5x {
+    font-size: 5em !important;
+}
+
+.btn .fa-6x,
+.btn-floating .fa-6x {
+    font-size: 6em !important;
+}
+
+.btn .fa-7x,
+.btn-floating .fa-7x {
+    font-size: 7em !important;
+}
+
+.btn .fa-8x,
+.btn-floating .fa-8x {
+    font-size: 8em !important;
+}
+
+.btn .fa-9x,
+.btn-floating .fa-9x {
+    font-size: 9em !important;
+}
+
+.btn .fa-10x,
+.btn-floating .fa-10x {
+    font-size: 10em !important;
+}
+
+.btn-floating {
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    width: 47px;
+    height: 47px;
+    position: relative;
+    z-index: 1;
+    vertical-align: middle;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    margin: 10px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
+}
+
+.btn-floating i {
+    font-size: 1.25rem;
+    line-height: 47px;
+}
+
+.btn-floating i {
+    display: inline-block;
+    width: inherit;
+    text-align: center;
+    color: #fff;
+}
+
+.btn-floating:hover {
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-floating:before {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+.btn-floating.btn-sm {
+    width: 36.15385px;
+    height: 36.15385px;
+}
+
+.btn-floating.btn-sm i {
+    font-size: 0.96154rem;
+    line-height: 36.15385px;
+}
+
+.btn-floating.btn-lg {
+    width: 61.1px;
+    height: 61.1px;
+}
+
+.btn-floating.btn-lg i {
+    font-size: 1.625rem;
+    line-height: 61.1px;
+}
+
+
+/* END BUTTONS */

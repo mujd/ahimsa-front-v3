@@ -1,0 +1,65 @@
+<html>
+      <head>
+        <meta charset="UTF-8">
+        <title>README.md</title>
+      </head>
+      <body>
+        <h1 id="smart-bootstrap-swipe-carousel">smart-bootstrap-swipe-carousel</h1>
+<p>Adds smart swipe feature, allows moving your slider on mobile devices by swiping. What is difference with this carousel plugin is the ability to do multiple swipes and it will change the slides accordingly.</p>
+<p>By default, bootstrap carousel does not allow changing the slide while it is sliding.</p>
+<p>See <a href="https://beyondtech.agency">Demo</a></p>
+<h2 id="dependencies">Dependencies</h2>
+<ol>
+<li>jQuery</li>
+<li>Bootstrap 3 or 4 (Depends on jQuery and Popper.js)</li>
+</ol>
+<h2 id="usage">Usage</h2>
+<p>It can be used with Browserify, Webpack as well as embedded in the browser.</p>
+<h3 id="es6">ES6</h3>
+<pre><code class="lang-javascript">import $ from &#39;jquery&#39;;
+import bootstrap from &#39;bootstrap&#39;;
+import BootstrapSwipeCarousel from &#39;smart-bootstrap-swipe-carousel&#39;;
+
+const carouselEl = $(&#39;.my-carousel&#39;);
+
+// Bootstrap carousel needs to be loaded first
+carouselEl.carousel().swipeCarousel({
+  sensitivity: &#39;high&#39; // low, medium or high
+});
+</code></pre>
+<h3 id="es5">ES5</h3>
+<pre><code class="lang-javascript">const $ = require(&#39;jquery&#39;);
+require(&#39;bootstrap&#39;);
+require(&#39;smart-bootstrap-swipe-carousel&#39;);
+
+const carouselEl = $(&#39;.my-carousel&#39;);
+
+// Bootstrap carousel needs to be loaded first
+carouselEl.carousel().swipeCarousel({
+  sensitivity: &#39;high&#39; // low, medium or high
+});
+</code></pre>
+<h3 id="embed-in-html">Embed in HTML</h3>
+<p>Download the <a href="https://raw.githubusercontent.com/ardeshireshghi/smart-bootstrap-swipe-carousel/master/dist/bootstrap-swipe-carousel.min.js">dist/bootstrap-swipe-carousel.min.js</a>
+and store it in your project. Make sure you add the script tag after <code>jquery.js</code> and <code>bootstrap.js</code>:</p>
+<pre><code class="lang-html">&lt;script src=&quot;js/bootstrap-swipe-carousel.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+</code></pre>
+<h2 id="development">Development</h2>
+<p>If you are insterested to contribute, fork the repository and start adding changes to make this cooler. Create an issue and let&#39;s have a chat before doing anything. After forking:</p>
+<h3 id="tests">Tests</h3>
+<pre><code>npm install
+npm run watch
+</code></pre><p><code>npm run watch</code> uses Mocha with JSDom to run the tests upon changes in the test file. This allows TDDing.</p>
+<h3 id="syntax-checks-and-coverage">Syntax checks and Coverage</h3>
+<p>Use <code>npm run lint</code> to check the style and <code>npm run coverage</code> to see the test coverage:</p>
+<pre><code class="lang-console">=============================== Coverage summary ===============================
+Statements   : 100% ( 70/70 )
+Branches     : 87.5% ( 28/32 )
+Functions    : 100% ( 17/17 )
+Lines        : 100% ( 69/69 )
+================================================================================
+</code></pre>
+<p> In order for any change to get merged, Branches coverage should be above 80% and the rest should be 100%.</p>
+
+      </body>
+    </html>

@@ -1,0 +1,28 @@
+/* SELECT */
+
+.bootstrap-select .btn-light {
+    color: #495057 !important;
+}
+
+.bootstrap-select .btn-success {
+    color: #4caf50 !important;
+}
+
+.btn.btn-filter-search.btn-light:active:hover,
+.btn.btn-filter-search.btn-light:hover,
+.btn.btn-filter-search.btn-success:active:hover,
+.btn.btn-filter-search.btn-success:hover {
+    background-color: transparent !important;
+    border-color: none !important;
+    /* background-color: hsla(0, 0%, 60%, .4);
+    border-color: hsla(0, 0%, 60%, .4) */
+}
+
+.btn,
+.custom-file-control:before {
+    font-size: 0.775rem;
+    text-transform: none !important;
+}
+
+
+/* FIN SELECT */

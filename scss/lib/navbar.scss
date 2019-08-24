@@ -1,0 +1,380 @@
+/* Navbar */
+
+.navbar-ahimsa {
+    z-index: 5;
+}
+
+.fixed-top {
+    transition: all 0.25s ease-in;
+}
+
+.navbar.fixed-top.scrolled {
+    padding: 10px 16px;
+}
+
+.navbar.fixed-top {
+    padding: 20px 16px;
+}
+
+.navbar.fixed-top {
+    -webkit-transition: 0.3s all ease-out;
+    -o-transition: 0.3s all ease-out;
+    transition: 0.3s all ease-out;
+}
+
+.top-nav-collapse {
+    background-color: $ahimsa-color-verde;
+    transition: 0.5s ease-in;
+}
+
+.navbar:not(.top-nav-collapse) {
+    transition: 0.5s ease-in;
+    background: transparent !important;
+}
+
+
+/* .navbar-ahimsa {
+    position: relative !important;
+    z-index: 9999;
+} */
+
+.navbar-ahimsa.scrolled.awake {
+    margin-top: 0px;
+    -webkit-transition: 0.3s all ease-out;
+    -o-transition: 0.3s all ease-out;
+    transition: 0.3s all ease-out;
+}
+
+.navbar-ahimsa.scrolled.sleep {
+    -webkit-transition: 0.3s all ease-out;
+    -o-transition: 0.3s all ease-out;
+    transition: 0.3s all ease-out;
+}
+
+@media (min-width: 991px) {
+    .navbar:not(.top-nav-collapse) {
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 990px) {
+    .navbar .navbar-nav .nav-item a {
+        margin-left: 0px;
+    }
+    .navbar.fixed-top {
+        position: fixed;
+        top: auto;
+    }
+    .navbar:not(.top-nav-collapse) {
+        background: rgba(0, 0, 0, 0.3) !important;
+    }
+}
+
+
+/* NAVBAR */
+
+.navbar-ahimsa.scrolled {
+    position: fixed;
+}
+
+.navbar-ahimsa.scrolled .nav-item.active>a {
+    color: $ahimsa-color-amarillo;
+}
+
+.navbar-ahimsa.scrolled .nav-link {
+    color: #fff !important;
+}
+
+.navbar-ahimsa.scrolled .nav-link.active,
+.navbar-ahimsa.scrolled .nav-link:hover {
+    color: $ahimsa-color-amarillo;
+}
+
+.navbar-ahimsa.scrolled.awake {
+    -webkit-transition: 0.3s all ease-out;
+    -o-transition: 0.3s all ease-out;
+    transition: 0.3s all ease-out;
+}
+
+.navbar-ahimsa.scrolled.sleep {
+    -webkit-transition: 0.3s all ease-out;
+    -o-transition: 0.3s all ease-out;
+    transition: 0.3s all ease-out;
+}
+
+
+/* Background color*/
+
+.bg-ahimsa {
+    -webkit-transition: 0.3s all ease-out;
+    -o-transition: 0.3s all ease-out;
+    transition: 0.3s all ease-out;
+}
+
+.bg-ahimsa.scrolled {
+    background-color: $ahimsa-color-verde;
+    background-image: url('../../../img/patterns/xv.png') !important;
+    background-image: url('../../../img/patterns/flowers.png') !important;
+    -webkit-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.5);
+    -webkit-transition: 0.3s all ease-in;
+    -o-transition: 0.3s all ease-in;
+    transition: 0.3s all ease-in;
+}
+
+
+/* ,
+.navbar .navbar-nav .nav-item a */
+
+.navbar .navbar-nav .nav-link {
+    text-transform: uppercase;
+    /* font-size: 14px; */
+    margin-left: 30px;
+    outline: none;
+    color: #fff;
+}
+
+
+/* Cambia el color de active or hovered links */
+
+.navbar .navbar-nav>.nav-item>a.active {
+    color: $ahimsa-color-amarillo;
+}
+
+.navbar .nav-item.active .nav-link,
+.navbar .nav-item:hover .nav-link {
+    color: $ahimsa-color-amarillo;
+}
+
+
+/* dropdown */
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+    display: none;
+    float: left;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 0.875rem;
+    color: #3e3f3a;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+    width: auto;
+}
+
+.navbar .nav-link,
+.dropdown-menu .dropdown-item {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    letter-spacing: 1.5px;
+}
+
+
+/* Cambia color del texto en dropdown */
+
+.navbar .navbar-nav .nav-item .dropdown-item {
+    color: $ahimsa-color-verde;
+}
+
+
+/* Cambia color del hover o active en dropdown */
+
+.navbar .navbar-nav .nav-item .dropdown-item:focus,
+.navbar .navbar-nav .nav-item .dropdown-item:hover {
+    box-sizing: border-box;
+    color: $ahimsa-color-amarillo;
+    background-color: transparent;
+}
+
+.navbar .navbar-nav .nav-item .dropdown-item:focus,
+.navbar .navbar-nav .nav-item .dropdown-item:hover {
+    color: $ahimsa-color-amarillo;
+}
+
+.navbar .navbar-nav .nav-item .dropdown-item.active,
+.navbar .navbar-nav .nav-item .dropdown-item:active {
+    color: $ahimsa-color-amarillo;
+}
+
+
+/* dropdown */
+
+
+/* FIN NAVBAR */
+
+
+/* Bootstrap 4 - Custom animated hamburger icon closed on page load */
+
+.navbar-ahimsa .navbar-toggler {
+    border-color: #fff;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#fff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-ahimsa.scrolled .navbar-toggler {
+    border-color: #fff !important;
+}
+
+.navbar-toggler {
+    border: none;
+    background: transparent !important;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    background: transparent !important;
+}
+
+.navbar-toggler .icon-bar {
+    background-color: #fff;
+    transform: rotate(0deg) translate(0px, 0px);
+    transition: ease all 0.2s;
+}
+
+.navbar.scrolled .navbar-toggler .icon-bar {
+    background-color: $ahimsa-color-amarillo;
+}
+
+.navbar-toggler .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+
+.navbar-toggler .icon-bar+.icon-bar {
+    margin-top: 4px;
+}
+
+.icon-bar:nth-child(2) {
+    width: 16px;
+    transition: ease all 0.2s;
+}
+
+.navbar-toggler:hover>.icon-bar:nth-child(2) {
+    width: 22px;
+    transition: ease all 0.2s;
+}
+
+.navbar-toggler:active>.icon-bar:nth-child(2) {
+    width: 22px;
+    transition: ease all 0.2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 4px);
+    transition: ease all 0.2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(2) {
+    opacity: 0;
+    transition: ease all 0.2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(3) {
+    transform: rotate(-45deg) translate(4px, -4px);
+    transition: ease all 0.2s;
+}
+
+.navbar-brand {
+    position: absolute !important;
+    top: 0px;
+    left: 100px;
+}
+
+.custom-logo {
+    width: 200px;
+    height: 200px;
+    /* position: absolute; */
+    /* top: 10px;
+    left: 50px; */
+    z-index: 999999;
+    -webkit-transition: 0.3s all ease-out;
+    -o-transition: 0.3s all ease-out;
+    transition: 0.3s all ease-out;
+}
+
+.logo-ahimsa {
+    font-family: $font-dancing;
+    font-size: 1.8rem;
+    /* color: #fff; */
+    color: $ahimsa-color-amarillo;
+    letter-spacing: 1.1px;
+    -webkit-transition: 0.3s all ease-out;
+    -o-transition: 0.3s all ease-out;
+    transition: 0.3s all ease-out;
+}
+
+.navbar-ahimsa.scrolled .custom-logo {
+    width: 150px;
+    height: 150px;
+    -webkit-transition: 0.3s all ease-in;
+    -o-transition: 0.3s all ease-in;
+    transition: 0.3s all ease-in;
+}
+
+.navbar-ahimsa.scrolled .logo-ahimsa {
+    /* color: $ahimsa-color-amarillo; */
+    color: #fff !important;
+    -webkit-transition: 0.3s all ease-in;
+    -o-transition: 0.3s all ease-in;
+    transition: 0.3s all ease-in;
+}
+
+
+/* MEDIA QUERYS */
+
+@media screen and (min-width: 768px) {
+    .logo-ahimsa {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .logo-ahimsa {
+        display: block;
+    }
+    .navbar-brand {
+        position: relative !important;
+        left: 0%;
+    }
+    .custom-logo {
+        display: none;
+    }
+    /* .navbar.fixed-top.scrolled.awake .custom-logo {
+        width: 60px;
+    } */
+}
+
+@media screen and (max-width: 450px) {
+    .logo-ahimsa {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .logo-ahimsa {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 991px) {}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {}
+
+
+/* FIN MEDIA QUERYS */
+
+
+/* Fin Navbar */

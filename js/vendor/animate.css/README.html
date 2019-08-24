@@ -1,0 +1,362 @@
+<html>
+      <head>
+        <meta charset="UTF-8">
+        <title>README.md</title>
+      </head>
+      <body>
+        <h1 id="animate-css-github-release-cdnjs-build-status-devdependencies-status-chat-npm-version">Animate.css <a href="https://github.com/daneden/animate.css/releases"><img src="https://img.shields.io/github/release/daneden/animate.css.svg" alt="GitHub release"></a> <a href="https://cdnjs.com/libraries/animate.css"><img src="https://img.shields.io/cdnjs/v/animate.css.svg" alt="CDNJS"></a> <a href="https://travis-ci.com/daneden/animate.css"><img src="https://travis-ci.com/daneden/animate.css.svg?branch=master" alt="Build Status"></a> <a href="https://david-dm.org/daneden/animate.css?type=dev"><img src="https://david-dm.org/daneden/animate.css/dev-status.svg" alt="devDependencies Status"></a> <a href="https://gitter.im/animate-css/Lobby"><img src="https://img.shields.io/badge/chat-gitter-green.svg" alt="chat"></a> <a href="https://www.npmjs.com/package/animate.css"><img src="https://badge.fury.io/js/animate.css.svg" alt="npm version"></a></h1>
+<p><em>Just-add-water CSS animation</em></p>
+<p><code>animate.css</code> is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.</p>
+<h2 id="installation">Installation</h2>
+<p>To install via Bower, simply do the following:</p>
+<pre><code class="lang-bash">$ bower install animate.css --save
+</code></pre>
+<p>or you can install via npm:</p>
+<pre><code class="lang-bash">$ npm install animate.css --save
+</code></pre>
+<h2 id="basic-usage">Basic Usage</h2>
+<ol>
+<li>Include the stylesheet on your document&#39;s <code>&lt;head&gt;</code></li>
+</ol>
+<pre><code class="lang-html">&lt;head&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;animate.min.css&quot;&gt;
+&lt;/head&gt;
+</code></pre>
+<p>Instead of installing you may use the remote version (hosted by <a href="https://cdnjs.com/libraries/animate.css">CDNJS</a>):</p>
+<pre><code class="lang-html">&lt;head&gt;
+  &lt;link rel=&quot;stylesheet&quot;
+  href=&quot;https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css&quot;&gt;
+  &lt;!-- or --&gt;
+  &lt;link rel=&quot;stylesheet&quot;
+  href=&quot;https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css&quot;&gt;
+&lt;/head&gt;
+</code></pre>
+<p>You may <a href="https://www.srihash.org/">generate a SRI hash</a> of that particular version and then use it to ensure the file&#39;s integrity; also you can make anonymous requests to CDN by setting the corresponding <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/CORS_settings_attributes"><code>crossorigin</code></a> attribute:</p>
+<pre><code class="lang-html">&lt;head&gt;
+  &lt;link rel=&quot;stylesheet&quot;
+  href=&quot;https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css&quot;
+  integrity=&quot;sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw&quot;
+  crossorigin=&quot;anonymous&quot;&gt;
+  &lt;!-- or --&gt;
+  &lt;link rel=&quot;stylesheet&quot;
+  href=&quot;https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css&quot;
+  integrity=&quot;sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw&quot;
+  crossorigin=&quot;anonymous&quot;&gt;
+&lt;/head&gt;
+</code></pre>
+<ol>
+<li><p>Add the class <code>animated</code> to the element you want to animate. You may also want to include the class <code>infinite</code> for an infinite loop.</p>
+</li>
+<li><p>Finally you need to add one of the following classes:</p>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Class Name</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>bounce</code></td>
+<td><code>flash</code></td>
+<td><code>pulse</code></td>
+<td><code>rubberBand</code></td>
+</tr>
+<tr>
+<td><code>shake</code></td>
+<td><code>headShake</code></td>
+<td><code>swing</code></td>
+<td><code>tada</code></td>
+</tr>
+<tr>
+<td><code>wobble</code></td>
+<td><code>jello</code></td>
+<td><code>bounceIn</code></td>
+<td><code>bounceInDown</code></td>
+</tr>
+<tr>
+<td><code>bounceInLeft</code></td>
+<td><code>bounceInRight</code></td>
+<td><code>bounceInUp</code></td>
+<td><code>bounceOut</code></td>
+</tr>
+<tr>
+<td><code>bounceOutDown</code></td>
+<td><code>bounceOutLeft</code></td>
+<td><code>bounceOutRight</code></td>
+<td><code>bounceOutUp</code></td>
+</tr>
+<tr>
+<td><code>fadeIn</code></td>
+<td><code>fadeInDown</code></td>
+<td><code>fadeInDownBig</code></td>
+<td><code>fadeInLeft</code></td>
+</tr>
+<tr>
+<td><code>fadeInLeftBig</code></td>
+<td><code>fadeInRight</code></td>
+<td><code>fadeInRightBig</code></td>
+<td><code>fadeInUp</code></td>
+</tr>
+<tr>
+<td><code>fadeInUpBig</code></td>
+<td><code>fadeOut</code></td>
+<td><code>fadeOutDown</code></td>
+<td><code>fadeOutDownBig</code></td>
+</tr>
+<tr>
+<td><code>fadeOutLeft</code></td>
+<td><code>fadeOutLeftBig</code></td>
+<td><code>fadeOutRight</code></td>
+<td><code>fadeOutRightBig</code></td>
+</tr>
+<tr>
+<td><code>fadeOutUp</code></td>
+<td><code>fadeOutUpBig</code></td>
+<td><code>flipInX</code></td>
+<td><code>flipInY</code></td>
+</tr>
+<tr>
+<td><code>flipOutX</code></td>
+<td><code>flipOutY</code></td>
+<td><code>lightSpeedIn</code></td>
+<td><code>lightSpeedOut</code></td>
+</tr>
+<tr>
+<td><code>rotateIn</code></td>
+<td><code>rotateInDownLeft</code></td>
+<td><code>rotateInDownRight</code></td>
+<td><code>rotateInUpLeft</code></td>
+</tr>
+<tr>
+<td><code>rotateInUpRight</code></td>
+<td><code>rotateOut</code></td>
+<td><code>rotateOutDownLeft</code></td>
+<td><code>rotateOutDownRight</code></td>
+</tr>
+<tr>
+<td><code>rotateOutUpLeft</code></td>
+<td><code>rotateOutUpRight</code></td>
+<td><code>hinge</code></td>
+<td><code>jackInTheBox</code></td>
+</tr>
+<tr>
+<td><code>rollIn</code></td>
+<td><code>rollOut</code></td>
+<td><code>zoomIn</code></td>
+<td><code>zoomInDown</code></td>
+</tr>
+<tr>
+<td><code>zoomInLeft</code></td>
+<td><code>zoomInRight</code></td>
+<td><code>zoomInUp</code></td>
+<td><code>zoomOut</code></td>
+</tr>
+<tr>
+<td><code>zoomOutDown</code></td>
+<td><code>zoomOutLeft</code></td>
+<td><code>zoomOutRight</code></td>
+<td><code>zoomOutUp</code></td>
+</tr>
+<tr>
+<td><code>slideInDown</code></td>
+<td><code>slideInLeft</code></td>
+<td><code>slideInRight</code></td>
+<td><code>slideInUp</code></td>
+</tr>
+<tr>
+<td><code>slideOutDown</code></td>
+<td><code>slideOutLeft</code></td>
+<td><code>slideOutRight</code></td>
+<td><code>slideOutUp</code></td>
+</tr>
+<tr>
+<td><code>heartBeat</code></td>
+</tr>
+</tbody>
+</table>
+<p>Full example:</p>
+<pre><code class="lang-html">&lt;h1 class=&quot;animated infinite bounce delay-2s&quot;&gt;Example&lt;/h1&gt;
+</code></pre>
+<p><a href="https://daneden.github.io/animate.css/">Check out all the animations here!</a></p>
+<h2 id="usage">Usage</h2>
+<p>To use animate.css in your website, simply drop the stylesheet into your document&#39;s <code>&lt;head&gt;</code>, and add the class <code>animated</code> to an element, along with any of the animation names. That&#39;s it! You&#39;ve got a CSS animated element. Super!</p>
+<pre><code class="lang-html">&lt;head&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;animate.min.css&quot;&gt;
+&lt;/head&gt;
+</code></pre>
+<p>or use the version hosted by <a href="https://cdnjs.com/libraries/animate.css">CDNJS</a></p>
+<pre><code class="lang-html">&lt;head&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css&quot;&gt;
+&lt;/head&gt;
+</code></pre>
+<p>You can do a whole bunch of other stuff with animate.css when you combine it with jQuery or add your own CSS rules. Dynamically add animations using jQuery with ease:</p>
+<pre><code class="lang-javascript">$(&#39;#yourElement&#39;).addClass(&#39;animated bounceOutLeft&#39;);
+</code></pre>
+<p>You can also detect when an animation ends:</p>
+<!--
+Before you make changes to this file, you should know that $('#yourElement').one() is *NOT A TYPO*
+
+http://api.jquery.com/one/
+-->
+<pre><code class="lang-javascript">// See https://github.com/daneden/animate.css/issues/644
+var animationEnd = (function(el) {
+  var animations = {
+    animation: &#39;animationend&#39;,
+    OAnimation: &#39;oAnimationEnd&#39;,
+    MozAnimation: &#39;mozAnimationEnd&#39;,
+    WebkitAnimation: &#39;webkitAnimationEnd&#39;,
+  };
+
+  for (var t in animations) {
+    if (el.style[t] !== undefined) {
+      return animations[t];
+    }
+  }
+})(document.createElement(&#39;div&#39;));
+
+$(&#39;#yourElement&#39;).one(animationEnd, doSomething);
+</code></pre>
+<p><a href="https://www.youtube.com/watch?v=CBQGl6zokMs">View a video tutorial</a> on how to use Animate.css with jQuery here.</p>
+<p><strong>Note:</strong> <code>jQuery.one()</code> is used when you want to execute the event handler at most <em>once</em>. More information <a href="http://api.jquery.com/one/">here</a>.</p>
+<p>You can also extend jQuery to add a function that does it all for you:</p>
+<pre><code class="lang-javascript">$.fn.extend({
+  animateCss: function(animationName, callback) {
+    var animationEnd = (function(el) {
+      var animations = {
+        animation: &#39;animationend&#39;,
+        OAnimation: &#39;oAnimationEnd&#39;,
+        MozAnimation: &#39;mozAnimationEnd&#39;,
+        WebkitAnimation: &#39;webkitAnimationEnd&#39;,
+      };
+
+      for (var t in animations) {
+        if (el.style[t] !== undefined) {
+          return animations[t];
+        }
+      }
+    })(document.createElement(&#39;div&#39;));
+
+    this.addClass(&#39;animated &#39; + animationName).one(animationEnd, function() {
+      $(this).removeClass(&#39;animated &#39; + animationName);
+
+      if (typeof callback === &#39;function&#39;) callback();
+    });
+
+    return this;
+  },
+});
+</code></pre>
+<p>And use it like this:</p>
+<pre><code class="lang-javascript">$(&#39;#yourElement&#39;).animateCss(&#39;bounce&#39;);
+or;
+$(&#39;#yourElement&#39;).animateCss(&#39;bounce&#39;, function() {
+  // Do somthing after animation
+});
+</code></pre>
+<p>You can change the duration of your animations, add a delay or change the number of times that it plays:</p>
+<pre><code class="lang-css">#yourElement {
+  -vendor-animation-duration: 3s;
+  -vendor-animation-delay: 2s;
+  -vendor-animation-iteration-count: infinite;
+}
+</code></pre>
+<p><em>Note: be sure to replace &quot;vendor&quot; in the CSS with the applicable vendor prefixes (webkit, moz, etc)</em></p>
+<h2 id="define-delay-and-speed-using-class">Define <em>Delay</em> and <em>Speed</em> using Class</h2>
+<h4 id="delay-class">Delay Class</h4>
+<p>You can also add delays directly on the element&#39;s class attribute, just like this:</p>
+<pre><code class="lang-html">&lt;div class=&quot;animated bounce delay-2s&quot;&gt;Example&lt;/div&gt;
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Class Name</th>
+<th>Delay Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>delay-2s</code></td>
+<td><code>2s</code></td>
+</tr>
+<tr>
+<td><code>delay-3s</code></td>
+<td><code>3s</code></td>
+</tr>
+<tr>
+<td><code>delay-4s</code></td>
+<td><code>4s</code></td>
+</tr>
+<tr>
+<td><code>delay-5s</code></td>
+<td><code>5s</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><em><strong>Note</strong>: The default delays are from 1 second to 5 seconds only. If you want to add customized delays, you can add it directly to your css</em></p>
+</blockquote>
+<h4 id="slow-slower-fast-and-faster-class">Slow, Slower, Fast, and Faster Class</h4>
+<p>You can control the speed of the animation by adding these classes, as a sample below:</p>
+<pre><code class="lang-html">&lt;div class=&quot;animated bounce faster&quot;&gt;Example&lt;/div&gt;
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Class Name</th>
+<th>Speed Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>slow</code></td>
+<td><code>2s</code></td>
+</tr>
+<tr>
+<td><code>slower</code></td>
+<td><code>3s</code></td>
+</tr>
+<tr>
+<td><code>fast</code></td>
+<td><code>800ms</code></td>
+</tr>
+<tr>
+<td><code>faster</code></td>
+<td><code>500ms</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><em><strong>Note</strong>: The default speed is <code>1s</code> which is you don&#39;t need to put any class. If you want to add a custom duration, you can add it directly to your css instead</em></p>
+</blockquote>
+<h2 id="custom-builds">Custom Builds</h2>
+<p>Animate.css is powered by <a href="http://gulpjs.com/">gulp.js</a>, and you can create custom builds pretty easily. First of all, you’ll need Gulp and all other dependencies:</p>
+<pre><code class="lang-sh">$ cd path/to/animate.css/
+$ sudo npm install
+</code></pre>
+<p>Next, run <code>gulp</code> to compile your custom builds. For example, if you want only some of the “attention seekers”, simply edit the <code>animate-config.json</code> file to select only the animations you want to use.</p>
+<pre><code class="lang-javascript">&quot;attention_seekers&quot;: {
+  &quot;bounce&quot;: true,
+  &quot;flash&quot;: false,
+  &quot;pulse&quot;: false,
+  &quot;shake&quot;: true,
+  &quot;headShake&quot;: true,
+  &quot;swing&quot;: true,
+  &quot;tada&quot;: true,
+  &quot;wobble&quot;: true,
+  &quot;jello&quot;:true
+}
+</code></pre>
+<h2 id="accessibility">Accessibility</h2>
+<p>Animate.css supports the <a href="https://webkit.org/blog/7551/responsive-design-for-motion/"><code>prefers-reduced-motion</code> media query</a> so that users with motion sensitivity can opt out of animations. On supported platforms (currently only OSX Safari and iOS Safari), users can select &quot;reduce motion&quot; on their operating system preferences and it will turn off CSS transitions for them without any further work required.</p>
+<h2 id="license">License</h2>
+<p>Animate.css is licensed under the MIT license. (<a href="http://opensource.org/licenses/MIT">http://opensource.org/licenses/MIT</a>)</p>
+<h2 id="contributing">Contributing</h2>
+<p>Pull requests are the way to go here. I apologise in advance for the slow action on pull requests and issues. I only have two rules for submitting a pull request: match the naming convention (camelCase, categorised [fades, bounces, etc]) and let us see a demo of submitted animations in a <a href="http://codepen.io">pen</a>. That last one is important.</p>
+
+      </body>
+    </html>

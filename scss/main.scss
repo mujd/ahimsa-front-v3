@@ -1,0 +1,139 @@
+@import 'lib/variables';
+@import 'lib/utils';
+@import 'lib/colors';
+@import 'lib/general';
+@import 'lib/typography';
+@import 'lib/buttons';
+@import 'lib/select';
+@import 'lib/form';
+@import 'lib/navbar';
+@import 'lib/mega-menu';
+@import 'lib/carousel';
+@import 'lib/footer';
+@import 'lib/product-grid';
+@import 'lib/filter-search';
+@import 'lib/cards';
+
+/* .navbar .nav-link,
+.btn,
+.nav-tabs .nav-link,
+.nav-pills .nav-link,
+.breadcrumb,
+.pagination,
+.dropdown-menu .dropdown-item,
+.tooltip {
+    font-size: 11px;
+    line-height: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+} */
+
+.ahimsa-shadow-normal {
+    border: none;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.ahimsa-shadow-green {
+    border: none;
+    box-shadow: 0 2px 2px 0 rgba(0, 128, 0, 0.14), 0 3px 1px -2px rgba(0, 128, 0, 0.2), 0 1px 5px 0 rgba(0, 128, 0, 0.12);
+}
+
+.ahimsa-shadow-yellow {
+    border: none;
+    box-shadow: 0 2px 2px 0 rgba(255, 197, 21, 0.14), 0 3px 1px -2px rgba(255, 197, 21, 0.2), 0 1px 5px 0 rgba(255, 197, 21, 0.12);
+}
+
+.bg-ahimsa {
+    background-color: #008000 !important;
+    color: #fff !important;
+}
+
+.flower-pattern {
+    background-image: url('../../../img/patterns/flowers.png') !important;
+}
+
+[class*='btn'] {
+    letter-spacing: 1.2px;
+}
+
+
+/* Preloader background */
+
+#mdb-preloader {
+    background-color: #1c2a48;
+}
+
+@media (min-width: 800px) and (max-width: 850px) {}
+
+
+/* page contacto */
+
+.map-container-section {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-container-section iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+#form-subject {
+    text-transform: capitalize;
+}
+
+.ajax-loader {
+    margin: 500px;
+}
+
+div.wpcf7-response-output {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+
+/* div.wpcf7 form.wpcf7-form span.ajax-loader {
+    display: none;
+} */
+
+
+/* 
+div.wpcf7 form.wpcf7-form div.boton-contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+
+/* page contacto */
+
+
+/* Container mapas */
+
+.map-container {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+
+/* Fin container mapas */
+
+.grecaptcha-badge {
+    visibility: hidden;
+}
