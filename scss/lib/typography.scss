@@ -10,11 +10,19 @@ h6 {
 }
 
 .text-ahimsa-green {
-    color: $ahimsa-color-verde;
+    color: $ahimsa-color-verde !important;
+}
+
+.text-ahimsa-green-light {
+    color: $ahimsa-color-verde-light !important;
+}
+
+.text-ahimsa-green-dark {
+    color: $ahimsa-color-verde-dark !important;
 }
 
 .text-ahimsa-yellow {
-    color: $ahimsa-color-amarillo;
+    color: $ahimsa-color-amarillo !important;
 }
 
 .main-title-ahimsa {
@@ -1391,6 +1399,18 @@ h5 {
     color: #666666;
     text-transform: uppercase;
     line-height: 1.8;
+}
+
+.font-md {
+    font-size: 0.1rem;
+}
+
+.font-sm {
+    font-size: 0.9rem;
+}
+
+.font-xs {
+    font-size: 0.8rem;
 }
 
 

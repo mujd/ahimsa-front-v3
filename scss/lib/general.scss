@@ -872,5 +872,66 @@ section.team-section .avatar img.rounded-circle {
     max-width: 150px;
 }
 
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #007bff;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #0056b3;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.flex-center {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+}
+
+.flex-center p {
+    margin: 0;
+}
+
+.flex-center ul {
+    text-align: center;
+}
+
+.flex-center ul li {
+    margin-bottom: 1rem;
+}
+
+.flex-center ul li:last-of-type {
+    margin-bottom: 0;
+}
+
+.hr-light {
+    border-top: 1px solid #fff;
+}
+
+.hr-dark {
+    border-top: 1px solid #666;
+}
+
+.hr-bold {
+    border-top: 2px solid #212529;
+}
+
 
 /* GIN GENERAL */

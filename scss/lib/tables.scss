@@ -1,0 +1,154 @@
+/* TABLES */
+
+.product-table img {
+    max-height: 100px;
+    min-width: 50px;
+}
+
+.product-table td {
+    vertical-align: middle;
+}
+
+.product-table .btn.btn-sm {
+    padding: 0.3rem 0.6rem;
+}
+
+table.table>thead>tr>th {
+    letter-spacing: 2px !important;
+}
+
+table.table>tbody>tr>td .tab-row {
+    display: flex;
+    justify-content: center;
+}
+
+table.table>tbody>tr>td>.tab-row>.tab-col {
+    width: 100%;
+    padding: 0;
+}
+
+table.table>tbody>tr>td>.tab-row>.tab-col .mask {
+    width: 150px;
+}
+
+table.table>tbody>tr>td>.tab-row>.tab-col>span {
+    font-weight: 500;
+}
+
+table.table>tbody>tr>td>.btn-tab-delete>span {
+    display: none;
+}
+
+table.table>thead.text-ahimsa-green>tr>th,
+table.table>tbody.text-ahimsa-green>tr>td {
+    color: $ahimsa-color-verde !important;
+}
+
+table.table>thead.text-ahimsa-green-light>tr>th,
+table.table>tbody.text-ahimsa-green-light>tr>td {
+    color: $ahimsa-color-verde-light !important;
+}
+
+table.table>thead.text-ahimsa-green-dark>tr>th,
+table.table>tbody.text-ahimsa-green-dark>tr>td {
+    color: $ahimsa-color-verde-dark !important;
+}
+
+table.table>thead.text-ahimsa-yellow>tr>th,
+table.table>tbody.text-ahimsa-yellow>tr>td {
+    color: $ahimsa-color-amarillo !important;
+}
+
+@media (max-width: 991px) {
+    table.table>tbody>tr>td>.btn-tab-delete {
+        width: 100%;
+    }
+    /* table.table>tbody>tr>td>.btn-tab-delete[data-toggle='tooltip'] {
+        display: none;
+    } */
+    table.table>tbody>tr>td>.btn-tab-delete>span {
+        display: inline-block;
+        margin-left: 5px;
+    }
+    table.table>tbody>tr>td .tab-row {
+        justify-content: space-between;
+    }
+    table.table>tbody>tr>td>.tab-row>.tab-col {
+        width: 50%;
+    }
+    .product-table h5 {
+        font-size: 0.875rem;
+    }
+    .product-table h5,
+    .product-table p {
+        margin-top: 25px;
+    }
+    .product-table img {
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 991px) {
+    .only-mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .td-cantidad {
+        text-align: left !important;
+    }
+}
+
+@media (max-width: 768px) {
+    table.table>tbody>tr>td>.btn-tab-delete {
+        width: 30%;
+    }
+    table.table>tbody>tr>td>.btn-tab-delete>span {
+        display: inline-block;
+        margin-left: 5px;
+    }
+    table.table>tbody>tr>td .tab-row {
+        justify-content: space-between;
+    }
+    table.table>tbody>tr>td>.tab-row>.tab-col {
+        width: 50%;
+    }
+    .product-table h5 {
+        font-size: 0.875rem;
+    }
+    .product-table h5,
+    .product-table p {
+        margin-top: 25px;
+    }
+    .product-table img {
+        margin-top: 15px;
+    }
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+        text-align: center;
+    }
+    table.table>thead {
+        display: none;
+    }
+}
+
+@media (max-width: 565px) {
+    table.table>tbody>tr>td>.btn-tab-delete {
+        width: 40%;
+    }
+}
+
+@media (max-width: 445px) {
+    table.table>tbody>tr>td>.btn-tab-delete {
+        width: 60%;
+    }
+}
+
+
+/* FIN TABLES */
