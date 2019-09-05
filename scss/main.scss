@@ -17,6 +17,63 @@
 @import 'lib/tooltip';
 @import 'lib/animaciones';
 
+/* Divider */
+
+.divider-new {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 2.8rem;
+    margin-bottom: 2.8rem;
+}
+
+.divider-new h2,
+.divider-new h3,
+.divider-new h4,
+.divider-new h5,
+.divider-new h6,
+.divider-new>h1 {
+    margin-bottom: 0;
+}
+
+.divider-new:after,
+.divider-new:before {
+    content: '';
+    height: 1.5px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    height: 2px;
+    background: #c6c6c6;
+}
+
+.divider-new:before {
+    margin: 0 0.5rem 0 0;
+}
+
+.divider-new:after {
+    margin: 0 0 0 0.5rem;
+}
+
+
+/* Fin Divider */
+
+
 /* .navbar .nav-link,
 .btn,
 .nav-tabs .nav-link,

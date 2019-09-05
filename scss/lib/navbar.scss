@@ -23,7 +23,7 @@
 }
 
 .top-nav-collapse {
-    background-color: $ahimsa-color-verde !important;
+    background-color: $ahimsa-color-rojo !important;
     transition: 0.5s ease-in;
 }
 
@@ -112,7 +112,7 @@
 }
 
 .bg-ahimsa.scrolled {
-    background-color: $ahimsa-color-verde !important;
+    background-color: $ahimsa-color-rojo !important;
     background-image: url('../../../img/patterns/xv.png') !important;
     background-image: url('../../../img/patterns/flowers.png') !important;
     -webkit-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.5);
@@ -182,7 +182,7 @@
 /* Cambia color del texto en dropdown */
 
 .navbar .navbar-nav .nav-item .dropdown-item {
-    color: $ahimsa-color-verde !important;
+    color: $ahimsa-color-rojo !important;
 }
 
 
@@ -294,8 +294,8 @@
 }
 
 .custom-logo {
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     /* position: absolute; */
     /* top: 10px;
     left: 50px; */
@@ -317,8 +317,8 @@
 }
 
 .navbar-ahimsa.scrolled .custom-logo {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     -webkit-transition: 0.3s all ease-in;
     -o-transition: 0.3s all ease-in;
     transition: 0.3s all ease-in;
